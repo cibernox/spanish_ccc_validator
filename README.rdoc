@@ -8,7 +8,7 @@ This gem provides a simple way to validate spanish bank account numbers.
 
 == INSTALL
 
-* Directly:
+=== Directly:
 Just type
   gem install spanish_ccc_validator
 
