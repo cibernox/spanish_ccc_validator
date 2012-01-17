@@ -31,4 +31,4 @@ It can be mixed with all options you're used to
 == TODO
 * Write specs    
 
-Copyright (c) 2012 Migue Camba
+Copyright (c) 2012 Miguel Camba
