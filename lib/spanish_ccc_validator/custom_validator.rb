@@ -16,6 +16,7 @@ module CustomValidator
     result
   end
 
+  # Validates size and checks control-digits corelation
   def self.validate(str)
     ary = canonize(str).split('').map(&:to_i)
     return false unless ary.size != 20
