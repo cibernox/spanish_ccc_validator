@@ -1,8 +1,8 @@
 require File.expand_path("./spec") + '/spec_helper.rb'
 
 describe SpanishCccValidator do
-  describe SpanishCccValidator::CustomValidator do
-    subject{ SpanishCccValidator::CustomValidator }
+  describe SpanishCccValidator::CustomCccValidator do
+    subject{ SpanishCccValidator::CustomCccValidator }
     describe '#canonize' do
       it "cleans the string till it is just numbers" do
         subject.canonize('1234-5678-91-1245678901').should == '12345678911245678901'

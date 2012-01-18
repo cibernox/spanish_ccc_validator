@@ -1,5 +1,5 @@
 module SpanishCccValidator
-  module CustomValidator
+  module CustomCccValidator
     # Gets a string and extracts the number from it
     # Example: canonize("1234-5678-90-3344556677") returns "12345678903344556677"
     def self.canonize(str)
