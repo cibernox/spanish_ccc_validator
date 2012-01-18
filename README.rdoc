@@ -26,8 +26,6 @@ It can be mixed with all options you're used to
   validate_spanish_ccc :origin_account_number, :destination_account_number,
     :message => "seems incorrect",
     :if => lambda { |sell| sell.payment_method == 'transfer' }
-
-== TODO
-* Write specs    
+  
 
 Copyright (c) 2012 Miguel Camba
