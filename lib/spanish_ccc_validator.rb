@@ -1,5 +1,5 @@
 require "spanish_ccc_validator/version"
-require "spanish_ccc_validator/custom_validator"
+require "spanish_ccc_validator/custom_ccc_validator"
 
 module SpanishCccValidator
 
@@ -14,7 +14,7 @@ module SpanishCccValidator
 
       validates_each(args, config) do |record, arg, value|
         error_msg = config[:message].is_a?(Proc) ? config[:message].call : config[:message]
-        record.errors.add(arg, error_msg) unless CustomValidator.validate(value)
+        record.errors.add(arg, error_msg) unless CustomCccValidator.validate(value)
       end
     end
   end
