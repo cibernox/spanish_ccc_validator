@@ -8,23 +8,21 @@ This gem provides a simple way to validate spanish bank account numbers.
 
 == INSTALL
 
-* Directly:
-Just type
+==== Directly:
+
   gem install spanish_ccc_validator
 
-* With bundler:
+==== With bundler:
 In your Gemfile
   gem "spanish_ccc_validator"
 Then exec
   bundle install  
 
 == USAGE
-It provides only a fancy method
-  
+It provides only a fancy method  
   validate_spanish_ccc :account_number
 
 It can be mixed with all options you're used to
-
   validate_spanish_ccc :origin_account_number, :destination_account_number,
     :message => "seems incorrect",
     :if => lambda { |sell| sell.payment_method == 'transfer' }
