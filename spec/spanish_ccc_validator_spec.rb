@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require File.expand_path("./spec") + '/spec_helper.rb'
 
 describe SpanishCccValidator do
